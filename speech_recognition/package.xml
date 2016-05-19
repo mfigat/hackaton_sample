@@ -1,0 +1,11 @@
+<package format="2">
+  <name>speech_recognition</name>
+  <version>0.2.0</version>
+  <description>Sample RAPP application - recognizes speech</description>
+  <maintainer email="m.stefanczyk@elka.pw.edu.pl">Maciej Stefańczyk</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>cmake</buildtool_depend>
+
+  <build_depend>rapp-robots-api</build_depend>
+</package>
