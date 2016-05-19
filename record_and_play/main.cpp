@@ -26,7 +26,7 @@ int main(int argc, char * argv[]) {
     comm.text_to_speech("Playing the captured sound");
 
     // play recorded audio
-    comm.play_audio(info.get_path("rapp_email.ogg"));
+    comm.play_audio(path);
 
     return 0;
 }
