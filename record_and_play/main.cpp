@@ -17,7 +17,6 @@ int main(int argc, char * argv[]) {
     int recording_time=10;
     
     // record audio
-    string file_path=comm.capture_audio(recording_time);
 
     // Sound was recored
     comm.text_to_speech("Sound was recored");
@@ -26,7 +25,7 @@ int main(int argc, char * argv[]) {
     comm.text_to_speech("Playing the captured sound");
 
     // play recorded audio
-    comm.play_audio(info.get_path(file_path));
+    comm.play_audio(info.get_path(comm.capture_audio(recording_time)));
 
     return 0;
 }
