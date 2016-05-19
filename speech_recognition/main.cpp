@@ -18,7 +18,7 @@ int main(int argc, char * argv[]) {
     // record audio
     std::string path = comm.capture_audio(recording_time);
     // Sound was recored
-    comm.text_to_speech("Sound was recored");
+    comm.text_to_speech("Sound was recorded");
     // Play captured sound
     comm.text_to_speech("Playing the captured sound");
     // play recorded audio

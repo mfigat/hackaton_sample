@@ -10,9 +10,7 @@ int main(int argc, char * argv[]) {
     rapp::robot::info info(argc, argv);
     rapp::robot::communication comm(argc, argv);
     
-    comm.text_to_speech("Recording the sound will start in 3 seconds");
-    comm.text_to_speech("2");
-    comm.text_to_speech("1");
+    comm.text_to_speech("Recording starts in a few moments");
 
     int recording_time=10;
     
@@ -20,7 +18,7 @@ int main(int argc, char * argv[]) {
     std::string path = comm.capture_audio(recording_time);
 
     // Sound was recored
-    comm.text_to_speech("Sound was recored");
+    comm.text_to_speech("Sound was recorded");
 
     // Play captured sound
     comm.text_to_speech("Playing the captured sound");
