@@ -44,9 +44,9 @@ int main(int argc, char * argv[]) {
 
     comm.text_to_speech("What color do you like?");
     // record audio
-    std::string path = comm.capture_audio(recording_time);
+    path = comm.capture_audio(recording_time);
     // Recognize word from a captured sound
-    std::vector<std::string> words =rapp::cloud::speech_detection_sphinx4("/home/nao/ws_rapp_applications_nao/src/rapp-applications-nao/nao/data/mail/sounds/rapp_email.ogg",
+    words =rapp::cloud::speech_detection_sphinx4("/home/nao/ws_rapp_applications_nao/src/rapp-applications-nao/nao/data/mail/sounds/rapp_email.ogg",
         "en",
         {"red", "blue", "pink", "green"},//{"monday", "tuesday"},
         {"red", "blue", "pink", "green"},
