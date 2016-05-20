@@ -25,8 +25,8 @@ int main(int argc, char * argv[]) {
     // play recorded audio
     comm.play_audio(path);
 
-    // Recognize word from a captured sound
-    std::vector<std::string> words =rapp::cloud::speech_detection_sphinx4("/home/nao/ws_rapp_applications_nao/src/rapp-applications-nao/nao/data/mail/sounds/rapp_email.ogg",
+      // Recognize word from a captured sound
+    rapp::cloud::speech_detection_sphinx4("/home/nao/ws_rapp_applications_nao/src/rapp-applications-nao/nao/data/mail/sounds/rapp_email.ogg",
         "en",
         {"monday", "tuesday"},
         {"monday", "tuesday"},
@@ -38,7 +38,20 @@ int main(int argc, char * argv[]) {
         true
     );
 
-    comm.text_to_speech("Recognize word");
+    // Recognize word from a captured sound
+    std::vector<std::string> words =rapp::cloud::speech_detection_sphinx4("/home/nao/ws_rapp_applications_nao/src/rapp-applications-nao/nao/data/mail/sounds/rapp_email.ogg",
+        "en",
+        {"yes", "no"},
+        {"yes", "no"},
+        {},
+        "nao_ogg",
+        "rapp",
+        "roman",
+        "9090",
+        true
+    );
+
+    comm.text_to_speech("Recognized word");
     for (unsigned i=0; i<words.size(); i++)
         comm.text_to_speech(words.at(i));
 
