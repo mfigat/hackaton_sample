@@ -25,7 +25,8 @@ int main(int argc, char * argv[]) {
     comm.play_audio(path);
 
     // Recognize word from a captured sound
-    rapp::cloud::speech_detection_sphinx4("/home/nao/recordings/microphones/rapp_email.ogg",
+    //rapp::cloud::speech_detection_sphinx4("/home/nao/recordings/microphones/rapp_email.ogg",
+    rapp::cloud::speech_detection_sphinx4("/home/nao/recordings/microphones/test.ogg",
         "en",
         {"monday", "tuesday"},
         {"monday", "tuesday"},
