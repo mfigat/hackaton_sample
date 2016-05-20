@@ -14,7 +14,7 @@ int main(int argc, char * argv[]) {
     rapp::robot::communication comm(argc, argv);
     
     comm.text_to_speech("Recording the sound");
-    int recording_time=5;
+    int recording_time=3;
     // record audio
     std::string path = comm.capture_audio(recording_time);
     // Sound was recored
