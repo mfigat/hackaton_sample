@@ -39,9 +39,8 @@ int main(int argc, char * argv[]) {
     );
 
     comm.text_to_speech("Recognize word");
-    for (unsigned i=0; i<words.size(); i++){
+    for (unsigned i=0; i<words.size(); i++)
         comm.text_to_speech(words.at(i));
-    }
 
 
     return 0;
