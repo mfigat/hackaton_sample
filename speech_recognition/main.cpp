@@ -29,8 +29,8 @@ int main(int argc, char * argv[]) {
     // Recognize word from a captured sound
     std::vector<std::string> words = rapp::cloud::speech_detection_sphinx4("/home/nao/ws_rapp_applications_nao/src/rapp-applications-nao/nao/data/mail/sounds/rapp_email.ogg",
         "en",
-        {"elephant", "banana"},
-        {"elephant", "banana"},
+        {"elephant", "banana","max"},
+        {"elephant", "banana","max"},
         {},
         "nao_ogg",
         "rapp",
